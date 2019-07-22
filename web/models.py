@@ -21,7 +21,7 @@ class User(models.Model):
     # 删除时间
     delete_time = models.DateTimeField(default=None)
     # 创建时间
-    create_time = models.DateTimeField(default=datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
+    create_time = models.DateTimeField(default=datetime.now().strftime('YYYY-MM-DD %HH-%MM-%SS'))
     # 更新时间
     update_time = models.DateTimeField(default=datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
 
